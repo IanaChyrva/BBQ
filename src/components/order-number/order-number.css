@@ -1,0 +1,49 @@
+.RecommendedItem__order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.RecommendedItem__changeNumber {
+    border: none;
+    background: transparent;
+    padding: 0px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #10B4A4;
+}
+
+.RecommendedItem__inputBox {
+    width: 34px;
+    margin: 0px 15px 0px 15px;
+    height: 40px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #363636;
+    border: 1px solid #D8D8D8;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.RecommendedItem__button {
+    margin-left: 35px;
+    width: 115px;
+    height: 40px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #363636;
+    border: 2px solid #10B4A4;
+}
