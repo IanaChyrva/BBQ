@@ -11,6 +11,7 @@ class Recommended extends React.Component {
           title={dish.menuType}
           dishTitle={dish.title}
           price={dish.price}
+          id={dish.id}
         />
       ))}
     </div>
