@@ -1,0 +1,12 @@
+.OrderButtonLight {
+    margin-left: 35px;
+    width: 115px;
+    height: 40px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #363636;
+    border: 2px solid #10B4A4;
+}

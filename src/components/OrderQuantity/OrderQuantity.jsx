@@ -1,14 +1,14 @@
 import React from 'react';
+import './OrderQuantity.css';
 
-class OrderNumber extends React.Component {
+class OrderQuantity extends React.Component {
     render = () => (
-        <div className="RecommendedItem__order">
+        <>
             <button type="submit" className="RecommendedItem__changeNumber">-</button>
             <input type="number" className="RecommendedItem__inputBox" />
             <button type="submit" className="RecommendedItem__changeNumber">+</button>
-            <button type="submit" className="RecommendedItem__button">Заказать</button>
-        </div>
+        </>
     )
 }
 
-export default OrderNumber;
+export default OrderQuantity;

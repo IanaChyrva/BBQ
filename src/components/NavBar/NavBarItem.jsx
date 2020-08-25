@@ -2,6 +2,7 @@ import React from 'react';
 
 
 class NavBarItem extends React.Component {
+
     render = () => (
         <div className="NavBarItem">
             <div className="NavBarItem__imageBox">

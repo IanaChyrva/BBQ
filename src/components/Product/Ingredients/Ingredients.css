@@ -1,0 +1,15 @@
+.mdashList {
+  width: 200px;
+  height: 210px;
+  list-style: none;
+  padding: 0px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.mdashIcon {
+  margin-right: 5px;
+  color: #10b4a4;
+}

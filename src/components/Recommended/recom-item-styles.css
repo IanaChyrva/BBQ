@@ -68,11 +68,15 @@
 
 .price {
     display: block;
-    margin-bottom: 21px;
     font-family: Roboto,sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     color: #474747;
+}
+
+.quantityBox {
+    display: flex;
+    margin-top: 21px;
 }

@@ -1,0 +1,15 @@
+.OrderButtonDark {
+    margin-left: 35px;
+    width: 135px;
+    height: 40px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #10B4A4;
+    box-shadow: 0px 3px 0px #0A6A60;
+}
+
+
+
