@@ -1,36 +1,21 @@
-import React from "react";
-import "./App.css";
+import image1 from "../../images/nav-bar/01.png"
+import image2 from "../../images/nav-bar/02.png"
+import image3 from "../../images/nav-bar/03.png"
+import image4 from "../../images/nav-bar/04.png"
+import image5 from "../../images/nav-bar/05.png"
+import image6 from "../../images/nav-bar/06.png"
+import image7 from "../../images/nav-bar/07.png"
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import dish1 from "../../images/recommended/photo1.jpg"
+import dish2 from "../../images/recommended/photo2.jpg"
+import dish3 from "../../images/recommended/photo3.jpg"
+import dish4 from "../../images/recommended/photo4.jpg"
+import dish5 from "../../images/recommended/photo5.jpg"
+import dish6 from "../../images/recommended/photo6.jpg"
+import dish7 from "../../images/recommended/photo7.jpg"
+import dish8 from "../../images/recommended/photo8.jpg"
 
-import NavBar from "./components/NavBar/index";
-
-import Recommended from "./components/Recommended";
-
-import FullProductItem from "./components/Product/FullProduct-Item";
-
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-
-import image1 from "./images/nav-bar/01.png";
-import image2 from "./images/nav-bar/02.png";
-import image3 from "./images/nav-bar/03.png";
-import image4 from "./images/nav-bar/04.png";
-import image5 from "./images/nav-bar/05.png";
-import image6 from "./images/nav-bar/06.png";
-import image7 from "./images/nav-bar/07.png";
-
-import dish1 from "./images/recommended/photo1.jpg";
-import dish2 from "./images/recommended/photo2.jpg";
-import dish3 from "./images/recommended/photo3.jpg";
-import dish4 from "./images/recommended/photo4.jpg";
-import dish5 from "./images/recommended/photo5.jpg";
-import dish6 from "./images/recommended/photo6.jpg";
-import dish7 from "./images/recommended/photo7.jpg";
-import dish8 from "./images/recommended/photo8.jpg";
-
-const navBarData = [
+export const navBarData = [
   {
     id: 1,
     title: "Бургеры",
@@ -103,7 +88,7 @@ const navBarData = [
   },
 ];
 
-const recommendedData = [
+export const recommendedData = [
   {
     id: 1,
     menuType: "мангал",
@@ -328,44 +313,3 @@ const recommendedData = [
     },
   },
 ];
-
-class App extends React.Component {
-  render = () => (
-    <div>
-      <Router>
-        <Container>
-          <Row>
-            <Col xs={12}>
-              <NavBar items={navBarData} />
-            </Col>
-          </Row>
-        </Container>
-
-        <Container>
-          <Row>
-            <Col xs={12}>
-              <Switch>
-                <Route path="/productfull/:id?">
-                  <FullProductItem recommendedData={recommendedData} />
-                </Route>
-              </Switch>
-            </Col>
-          </Row>
-        </Container>
-
-        <Container>
-          <Row>
-            <Col xs={12}>
-              <div className="RecommendedTitle">Рекомендуемые блюда</div>
-            </Col>
-            <Col xs={12}>
-              <Recommended dishes={recommendedData} />
-            </Col>
-          </Row>
-        </Container>
-      </Router>
-    </div>
-  );
-}
-
-export default App;
